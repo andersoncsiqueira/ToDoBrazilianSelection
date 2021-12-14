@@ -44,3 +44,51 @@ search.addEventListener('input', event => {
        
    
 })
+
+
+
+const bestPlayers = [
+'thiago silva', 
+'vinícius junior', 
+'vinícius jr',
+ 'antony',
+'casemiro', 
+'Eder Militão',
+' neymar', 
+'marquinhos', 'paqueta', 
+ 'alisson', 
+'arana',
+'philipe coutinho',
+ 'hulk',
+ 'fernandinho',
+]
+
+ 
+    insertPlayer.addEventListener('submit', event => {
+        
+    const playerNames = Array.from(container.children)
+    .map(names => names.children[0].innerText.toLowerCase())
+    
+     let counter = 0
+
+    for (i = 0; i< bestPlayers.length; i++) {
+        if((playerNames.some(name => name === bestPlayers[i]))){
+            console.log(bestPlayers[i])
+        }
+
+    }
+
+
+    })
+
+     
+
+
+     /*.forEach(names => {
+         if(bestPlayers[5].includes(names)){
+             counter += 1
+             console.log(counter)
+         }
+         console.log(counter)
+     })*/
+ 

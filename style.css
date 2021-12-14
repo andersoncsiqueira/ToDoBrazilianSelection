@@ -17,6 +17,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 600px; 
+    
 }
 
 
@@ -24,6 +25,7 @@ main {
 div {
     
     text-align: center;
+    
 }
 
 .addplayer {
@@ -32,18 +34,22 @@ div {
     border-radius: 10px;
     text-align: center;
     
+    
+    
 }
 
 input {
-    width: 200px;
+    width: 300px;
     height: 25px;
     border-radius: 10px;
     margin-bottom: 20px;
+    margin-top: 3px;
     
 }
 
 .search {
     padding-top: 20px;
+    
 }
 
 ul {
@@ -70,4 +76,50 @@ i {
 
 .hidden {
     display: none;
+}
+
+label {
+    color: blanchedalmond;
+    font-weight: bold;
+}
+
+.progress {
+    background-image:   linear-gradient( rgb(74, 243, 83), #057e45,#057e45,#057e45, rgb(74, 243, 83)) ;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;    
+    height: 45px;
+    margin-bottom: 20px;
+    color: rgb(253, 253, 252);
+}
+
+.progress > label {
+    font-size: 25px;
+}
+
+progress {
+    padding: 5px;
+    width: 100px;
+}
+
+.ribamar {
+    position: absolute;
+    top: 210px;
+    left: -250px;
+    height: 200px;
+}
+
+.tite {
+    height: 200px;
+}
+
+.neymar {
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.vinicius {
+    height: 200px;
+    
 }

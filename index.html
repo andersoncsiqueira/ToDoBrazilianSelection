@@ -15,33 +15,39 @@
     </header>
    
     <div class="search">
-        <input class="searchCamp" type="text" placeholder="Digite o nome do jogador">
+        <input class="searchCamp" type="text" placeholder="Busca por jogador convocado">
     </div>
     <main>
         
             
-                <img src="imagens/tite.png" alt="" srcset="">
+                <img class="tite" src="imagens/tite.png" alt="" srcset="">
                 <ul class="containNames">
                     <li class="li">
-                        <span>Thiago Silva</span>
+                        <span name="player">Thiago Silva</span>
                         <i class="delete">x</i>
                     </li>
                     <li class="li">
-                        <span> Lodi</span>
+                        <span name="player"> Lodi</span>
                         <i class="delete">x</i>
                     </li>
                     <li class="li">
-                        <span> Eder Militão </span>
+                        <span name="player"> Eder Militão </span>
                         <i class="delete">x</i>
                     </li>
                 </ul>
             
-
-            
+                
+                <img class="neymar" src="imagens/neymar.png" alt=""> 
+                 
     </main>
-    <div class="search">
+    <div class="progress">
+        <label for="">Chance de título</label><br>
+        <progress class="chanceWinns" value="70" max="100">70%</progress>
+    </div>
+    <div class="add">
         <form class="addPlayer" action="">
-            <input  type="text" placeholder="Adicione um jogador!" name="add" autofocus>
+            <label for="">Convoque seu craque!</label><br>
+            <input  type="text" placeholder="Nome do jogador!" name="add" autofocus>
                 </div>
         </form>
     <script src="app.js"></script>
