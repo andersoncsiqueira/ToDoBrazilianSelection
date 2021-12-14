@@ -2,6 +2,8 @@ const insertPlayer = document.querySelector('.addPlayer')
 const container = document.querySelector('.containNames')
 const search = document.querySelector('.searchCamp')
 const winnsOdds = document.querySelector('.winnsOdds')
+const neymar = document.querySelector('#neymar')
+const odd = document.querySelector('.odd') 
 
 insertPlayer.addEventListener('submit', event => {
     event.preventDefault()
@@ -65,7 +67,7 @@ const bestPlayers = [
  'fernandinho',
 ]
 
-let counter = 0
+let counter = 25
     insertPlayer.addEventListener('submit', event => {
         
     const playerNames = Array.from(container.children)
@@ -82,7 +84,27 @@ let counter = 0
     }
     console.log(counter)
     winnsOdds.setAttribute('value',`${counter}`)
+    odd.innerText = `${counter}`
     })
+
+    insertPlayer.addEventListener('submit', event => {
+        
+        const playerNames = Array.from(container.children)
+        .map(names => names.children[0].innerText.toLowerCase())
+        
+         
+            if(playerNames.includes('neymar')){
+                neymar.classList.remove('hidden')
+                neymar.classList.toggle('neymar')
+            }
+            
+        
+        
+        
+        })
+
+        
+    
 
      
 

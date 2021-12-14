@@ -79,8 +79,9 @@ i {
 }
 
 label {
-    color: blanchedalmond;
+    color: rgb(232, 255, 21);
     font-weight: bold;
+    font-size: 25px;
 }
 
 .progress {
@@ -88,7 +89,7 @@ label {
     margin: auto;
     text-align: center;
     border-radius: 15px;    
-    height: 45px;
+    height: 80px;
     margin-bottom: 20px;
     color: rgb(253, 253, 252);
 }
@@ -97,16 +98,24 @@ label {
     font-size: 25px;
 }
 
+span {
+    font-size: 20px;
+    font-weight: bolder;
+    color: blue;
+}
+
 progress {
-    padding: 5px;
-    width: 100px;
+    
+    width: 200px;
+    height: 30px;
 }
 
 .ribamar {
     position: absolute;
-    top: 210px;
-    left: -250px;
+    top: 45px;
+    left: -200px;
     height: 200px;
+    transform: rotate(40deg);
 }
 
 .tite {
