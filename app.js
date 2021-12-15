@@ -79,6 +79,8 @@ let counter = 25
     for (i = 0; i< bestPlayers.length; i++) {
         if(bestPlayers[i].includes(playerNames[playerNames.length-1])){
             counter += 3
+        } else if (playerNames.includes('ribamar')||playerNames.includes('Ribamar')){
+            counter -= 5
         }
         
     }
