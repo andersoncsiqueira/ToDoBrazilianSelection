@@ -25,6 +25,7 @@ const elementCliked = event.target.classList
     if(Array.from(elementCliked).includes('delete')){
         event.target.parentElement.remove()
         odd.innerText = "Agora as chances de títulos são de mais de 8.000,00"
+        winnsOdds.setAttribute('value','100')
     }
    
 })
