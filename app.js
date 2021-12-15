@@ -24,6 +24,7 @@ const elementCliked = event.target.classList
 
     if(Array.from(elementCliked).includes('delete')){
         event.target.parentElement.remove()
+        odd.innerText = "Agora as chances de títulos são de mais de 8.000,00"
     }
    
 })
@@ -45,10 +46,7 @@ search.addEventListener('input', event => {
        li.classList.remove('hidden')
    })
        
-   
 })
-
-
 
 const bestPlayers = [
 'thiago silva', 
@@ -73,9 +71,7 @@ let counter = 25
     const playerNames = Array.from(container.children)
     .map(names => names.children[0].innerText.toLowerCase())
     
-     
-     
-     
+   
     for (i = 0; i< bestPlayers.length; i++) {
         if(bestPlayers[i].includes(playerNames[playerNames.length-1])){
             counter += 3
