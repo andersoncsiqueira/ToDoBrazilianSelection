@@ -96,9 +96,6 @@ let counter = 25
                 neymar.classList.remove('hidden')
                 neymar.classList.toggle('neymar')
             }
-            
-        
-        
         
         })
 
