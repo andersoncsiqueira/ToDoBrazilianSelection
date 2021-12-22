@@ -109,11 +109,3 @@ search.addEventListener('input', event => {
     winnsOdds.setAttribute('value',`${counter}`)
     odd.innerText = `${counter}`
     })
-        
-    
-
-     
-
-
-     
- 
