@@ -54,11 +54,7 @@ const addPlayer = (inputValue) => {
     }
     event.target.reset()
 }
-insertPlayer.addEventListener('submit', event => {
-    event.preventDefault()
-    const inputValue = event.target.add.value.trim()
-    addPlayer(inputValue)
-})
+
 
 const removeTodo = clikedElement => {
     const trashDataValue = clikedElement.dataset.trash
@@ -85,6 +81,9 @@ search.addEventListener('input', event => {
 })
 
     insertPlayer.addEventListener('submit', event => {
+        event.preventDefault()
+    const inputValue = event.target.add.value.trim()
+    addPlayer(inputValue)
     const playerNames = Array.from(todosContainer.children)
     .map(names => names.children[0].innerText.toLowerCase())
     
@@ -95,17 +94,11 @@ search.addEventListener('input', event => {
             counter -= 5
         }  
     }
-    
-    insertPlayer.addEventListener('submit', event => {
-        const playerNames = Array.from(todosContainer.children)
-        .map(names => names.children[0].innerText.toLowerCase())
-        
             if(playerNames.includes('neymar')){
                 neymar.classList.remove('hidden')
                 neymar.classList.toggle('neymar')
             }
-    })
-
+    
     winnsOdds.setAttribute('value',`${counter}`)
     odd.innerText = `${counter}`
     })
