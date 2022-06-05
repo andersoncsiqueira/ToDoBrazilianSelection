@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #225954;
+    width: auto;
+}
+
+main {
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+header {
+    background: #F2CB05;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-container {
+    margin: 25px;
+    width: 90vw;
+}
+
+ul {
+    background: white;
+    width: 300px;
+    height: 350px;
+    margin: 15px auto 15px auto;
+}
+
+
+.filder {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background-image: url('imagens/partes-do-campo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 5px black;
+}
+
+.filder h3 {
+    position: relative;
+    top: -20px;
+    left: 0px;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+}
+
+footer p {
+    text-align: center;
+}
