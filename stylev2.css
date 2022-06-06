@@ -7,6 +7,7 @@
 body {
     background: #225954;
     width: auto;
+   
 }
 
 main {
@@ -27,19 +28,80 @@ header {
 }
 
 .add-container {
+    background: #F2B705;
+    padding: 5px;
     margin: 25px;
-    width: 90vw;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.add-container input, .add-container label, .add-container select, .add-container button {
+    width: 200px;
+    margin: 4px;
 }
 
 ul {
-    background: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.466),rgba(128, 128, 128, 0.664));
     width: 300px;
     height: 350px;
     margin: 15px auto 15px auto;
+    box-shadow: 2px 2px 5px black;
+}
+
+ul h2 {
+    
+    position: relative;
+    top: -25px;
+    text-align: center;
 }
 
 
+
+li {
+    background: #068125;
+    width: 180px;
+    margin: 8px auto 8px 50px;
+    height: 26px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    font-weight: 700;
+    position: relative;
+}
+.atac {
+    list-style: url('atacante.png');
+}
+
+
+.mei {
+    list-style: url('meia.png');
+}
+
+.zag {
+    list-style: url('zageiro.png');
+}
+
+.gol {
+    list-style: url('goleiro.png');
+}
+
+.lat {
+    list-style: url('lateral.png');
+}
+
+i img {
+    width: 10px;
+    position: absolute;
+    right: 5px;
+    top: 9px;
+    cursor: pointer;
+}
+
 .filder {
+    position: relative;
     width: 400px;
     height: 300px;
     margin: auto;
@@ -47,6 +109,7 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
     box-shadow: 2px 2px 5px black;
+    outline: 110px solid #BF7E04;
 }
 
 .filder h3 {
@@ -54,12 +117,57 @@ ul {
     top: -20px;
     left: 0px;
 }
+
+.atack {
+    position: absolute;
+    right: -109px;
+    top: 0px;
+    width: 110px;
+    height: 300px;
+    border: 1px dotted black;
+    background: #0027766b;
+}
+
+.filderCamp {
+    position: absolute;
+    bottom: -110px;
+    width: 400px;
+    height: 110px;
+    border: 1px dotted black;
+    background: #00277670;
+}
+
+.defenser {
+    position: absolute;
+    left: -109px;
+    top: 0px;
+    width: 110px;
+    height: 300px;
+    border: 1px dotted black;
+    background: #0027766b;
+}
+
+
 footer {
     position: absolute;
-    bottom: 0px;
+    bottom: calc(var(bottom)-70px);
     width: 100vw;
 }
 
 footer p {
     text-align: center;
 }
+
+button {
+    background: #002776;
+    border: none;
+    color: white;
+    padding: 4px;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #BF7E04;
+    color: #002776;
+}
+
